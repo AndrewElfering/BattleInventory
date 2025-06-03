@@ -3,11 +3,16 @@ public class Main {
 
         Inventory inventory = new Inventory(); 
 
-        Ration ration = new Ration("MRE", 10, "food");
-        Weapon weapon = new Weapon("Axe", 4, 75, "bladed");
+        Ration mreRation = new Ration("MRE", 10, 25);
+        Weapon axeWeapon = new Weapon("Axe", 4, 75, "Melee");
+        Weapon daggarWeapon = new Weapon("Axe", 4, 75, "Melee");
+        Armor chainmillArmor = new Armor("Chainmill", 1, 90, "body");
 
-        inventory.addItem(ration);
-        inventory.addItem(weapon);
+        inventory.addItem(mreRation);
+        inventory.addItem(axeWeapon);
+        inventory.addItem(daggarWeapon);
+        inventory.addItem(chainmillArmor);
+
         inventory.displayInventory();
     }
 

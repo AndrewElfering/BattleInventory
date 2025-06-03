@@ -1,17 +1,17 @@
 public class Ration extends Item {
-    private String type;
+    private int power;
 
-    public Ration(String name, int quantity, String type) {
-        super(name, quantity);
-        this.type = type; 
+    public Ration(String name, int quantity, int power) {
+        super(name, quantity); 
+        this.power = power;
     }
 
-    public String getType() {
-        return type;
+    public int getPower() {
+        return power;
     }
 
     @Override
     public String toString() {
-      return "Ration: " + getName() + ", Quantity: " + getQuantity() + ", Type: " + type;  
+      return "Ration: " + getName() + ", Quantity: " + getQuantity() + ", Power: " + getPower();  
     }
 }
